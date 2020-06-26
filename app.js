@@ -13,6 +13,8 @@ var express = require("express"),
 	User = require("./models/user"),
 	seedDB = require("./seeds");
 
+
+
 //requiring routes
 var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
@@ -23,8 +25,10 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
-mongoose.connect(url);
+// var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+// mongoose.connect(url);
+
+mongoose.connect('mongodb+srv://aiman-mumtaz:Alohomora21@cluster0.ctl6o.mongodb.net/yelp_camp?retryWrites=true&w=majority');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
