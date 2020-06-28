@@ -51,8 +51,20 @@ middlewareObj.isLoggedIn = function(req, res, next){
     if(req.isAuthenticated()){
         return next();
     }
+	if(req["headers"]["content-type"] === "application/json") {	//to check if request was from ajax
+		return res.send({error: "Login required!"});
+	}
     req.flash("error", "You need to be logged in to do that");
     res.redirect("/login");
+}
+
+middlewareObj.isPaid = function(req, res, next){
+    if(req.user.isPaid){
+        return next();
+    }
+	req.flash("error", "Please pay the registration fee to continue");
+    res.redirect("/checkout");
+	
 }
 
 module.exports = middlewareObj;
