@@ -25,10 +25,8 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
-// var url = process.env.DATABASEURL || "mongodb://:27017localhost/yelp_camp";
-// mongoose.connect(url);
-
- mongoose.connect('mongodb+srv://aiman-mumtaz:Alohomora21@cluster0.ctl6o.mongodb.net/yelp_camp?retryWrites=true&w=majority');
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+ mongoose.connect(url);
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
