@@ -1,4 +1,5 @@
 var express = require("express");
+var User = require("../models/user");
 var router  = express.Router();
 var Campground = require("../models/campground");
 let { checkCampgroundOwnership, isLoggedIn, isPaid } = require("../middleware");
@@ -6,7 +7,7 @@ router.use(isLoggedIn, isPaid);
 
 //INDEX - show all campgrounds
 router.get("/", function(req, res){
-	if (req.query.paid) res.locals.success = "Payment succeeded, Welcome to YelpCamp";
+	if (req.query.paid) res.locals.success = "Payment successful! Welcome to YelpCamp!";
 	var noMatch = null;
     if(req.query.search) {
         const regex = new RegExp(escapeRegex(req.query.search), 'gi');
