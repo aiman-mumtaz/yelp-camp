@@ -5,6 +5,8 @@ YelpCamp
 Live Demo
 
     To see the app in action, go to https://aqueous-ocean-47601.herokuapp.com/
+    
+    (For card-number, go to card-details.md)
 
 Features
 
