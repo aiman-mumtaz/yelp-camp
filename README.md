@@ -74,26 +74,26 @@ Install dependencies
 
 Built with
 
-Front-end
+    Front-end
 
-    ejs
-    Bootstrap
+        ejs
+        Bootstrap
 
-Back-end
+    Back-end
 
-    express
-    mongoDB
-    mongoose
-    passport
-    passport-local
-    express-session
-    method-override
-    nodemailer
-    moment
-    connect-flash
-    stripe
-    
- Platforms
-  
-    Heroku
-    Goorm IDE
+        express
+        mongoDB
+        mongoose
+        passport
+        passport-local
+        express-session
+        method-override
+        nodemailer
+        moment
+        connect-flash
+        stripe
+
+     Platforms
+
+        Heroku
+        Goorm IDE
