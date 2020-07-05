@@ -64,7 +64,7 @@ Getting Started
 
 Clone or download this repository
 
-    git clonehttps://github.com/aiman-mumtaz/yelp-camp.git
+    git clone https://github.com/aiman-mumtaz/yelp-camp.git
 
 Install dependencies
 
