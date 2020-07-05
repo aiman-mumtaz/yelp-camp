@@ -4,7 +4,7 @@ YelpCamp
 
 Live Demo
 
-To see the app in action, go to https://aqueous-ocean-47601.herokuapp.com/
+    To see the app in action, go to https://aqueous-ocean-47601.herokuapp.com/
 
 Features
 
@@ -62,19 +62,15 @@ Getting Started
 
 Clone or download this repository
 
-git clonehttps://github.com/aiman-mumtaz/yelp-camp.git
+    git clonehttps://github.com/aiman-mumtaz/yelp-camp.git
 
 Install dependencies
 
-npm install
+    npm install
 
-or
+    or
 
-yarn install
-
-Comments in code
-
-Some comments in the source code are course notes and therefore might not seem necessary from a developer's point of view.
+    yarn install
 
 Built with
 
